@@ -1,0 +1,5 @@
+{
+    "default_name" : "project.exe",
+    "default_compiler" : "g++",
+    "default_standard" : "c++20"
+}
