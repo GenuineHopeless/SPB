@@ -12,12 +12,12 @@ std::string buildCommand(const CompileCommand& cmd) {
         ss << " " << cmd.std_flag;
     }
 
-    for (const auto& flag : cmd.other_flags){
-        ss << " " << flag;
-    }
-
     for (const auto& file: cmd.source_files){
         ss << " " << file;
+    }
+
+    for (const auto& flag : cmd.other_flags){
+        ss << " " << flag;
     }
 
     if (!cmd.output_name.empty()){
